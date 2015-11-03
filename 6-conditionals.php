@@ -14,12 +14,12 @@ if($month == true)
 <?php
 switch($month) {
     case 'january':
-    echo "its jan";
+        echo "its jan";
         break;
 
     case 'february':
         echo "its feb";
-                    break;
+        break;
 
     default:
         echo "its none of em";
@@ -28,24 +28,24 @@ switch($month) {
 ?>
 <hr />
 <p>Array lookup</p>
-<?php 
+<?php
 $months = ["jan" => "the month is january", "feb" => "the month is February", 'march' => "the month is March"];
 
 echo $months['feb'];
-    ?>
-<hr>
+?>
+<hr />
 <p>If with and</p>
 <?php
 if ($month != 'feb' && $month != 'mar')
     echo "month doesn't equal feb or mar";
-    ?>
+?>
 
 <hr />
 <p>If with or</p>
 <?php
 if($month === 'january' || $month === 'february')
     echo "month is jan or feb";
-        ?>
+?>
 
 <hr />
 
