@@ -16,6 +16,8 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="arrays1.php" />
+    <Compile Include="arrays2.php" />
     <Compile Include="index.php" />
   </ItemGroup>
 </Project>
