@@ -12,48 +12,59 @@ $months = array('jan', 'feb', 'march' ,'apr', 'may');
     <div>One way</div>
     <?php
     //two ways to add values to the array
-    array_push($months, 'june');
-
+    array_push($months, 'jun');
+    
     var_dump($months);
+    
     ?>
     <div>Second way</div>
     <?php
     //short hand way
     $months[] = 'july';
-
+    
     print_r($months);
+    
     ?>
     <hr />
     <p>remove item from end of array</p>
     <?php
     array_pop($months);
-    print_r($months);
+    
+    var_dump($months);
+    
     ?>
     <p>Keep a reference to the item removed</p>
-    <div>this works with all of the array functions i.e. you can assign the result to a variable for subsequent use</div>
-    <?php
+    <?php 
     $output = array_pop($months);
-    print_r($output);
-    ?>
+
+    echo $output;?>
+    <div><strong>Note:</strong> This works with all of the array functions i.e. you can assign the result to a variable for subsequent use</div>
+    <hr />
     <p>Remove item from beginning of array</p>
     <?php 
+    
     array_shift($months);
-    print_r($months);
+    
+    var_dump($months);
+    
     ?>
+    <hr />
     <p>add item to beginning af array</p>
     <?php
     array_unshift($months, 'jan');
-    print_r($months);
+    
+    var_dump($months);
     ?>
-    <p>Slice values to a new array</p>
+    <hr />
+    <p>Slice values to a new array get another array with feb and march</p>
     <?php
-    $ouput = array_slice($months, 2, 3);
-    print_r($ouput);
+    var_dump(array_slice($months, 1,2));
     ?>
+    <hr />
     <p>Filter the array</p>
     <?php
-    var_dump($months);
-    $output = array_filter($months, function($month){return strlen($month) == 3;});
+    $output = array_filter($months, function($month){ return strlen($month) == 3;});
+    
     var_dump($output);
     ?>
 

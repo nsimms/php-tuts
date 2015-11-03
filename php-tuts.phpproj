@@ -16,8 +16,13 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="arrays1.php" />
-    <Compile Include="arrays2.php" />
+    <Compile Include="4-arrays1-wip-shell.php" />
+    <Compile Include="4-arrays1-wip.php" />
+    <Compile Include="4-arrays1.php" />
+    <Compile Include="5-arrays2-wip.php" />
+    <Compile Include="5-arrays2-shell.php" />
+    <Compile Include="5-arrays2.php" />
+    <Compile Include="6-conditionals.php" />
     <Compile Include="index.php" />
   </ItemGroup>
 </Project>
