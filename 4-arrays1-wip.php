@@ -12,7 +12,7 @@ $months = array('january', 'february', 'march');
 </head>
 <body>
     <p>Shorthand echo available from php 5.4</p>
-    <?=$plainvar;?>
+    <?=$plainvar?>
     <hr />
     <?php
     //dump out variables
@@ -23,37 +23,37 @@ $months = array('january', 'february', 'march');
     ?>
     <p>Return a single item from the array</p>
     <?php
-    echo "the month is " . $months[1];
+    echo $months[0];
     ?>
     <hr />
     <p>declare an indexed array with the alternate syntax available as of php 5.4 but if use it have to make sure the host is running appropriate version</p>
     <?php
-    $idx_family = ['nev simms','clare simms','fred simms'];
+    $idx_family = array('Nev'. 'Clare', 'Freddy');
     ?>
     <hr />
     <p>delcare associative family array</p>
     <?php
-    $assoc_family = array('nev' => '41', 'clare' => '36', 'fred' => '0');
-    
+    $assoc_family = array('dad' => 'nev', 'mum' => 'clare', 'son' => 'fred');
     ?>
     <hr />
-    <div>Iterate the index array foreach($array as $value)</div>
+
+
+    <div>Iterate the index array ouputing a list</div>
     <div><strong>Note:</strong> here we can simply echo variable within strings as using double quotes. cannot do with single quotes. in that case need proper concatenation</div>
     <ul>
         <?php
-        foreach($idx_family as $member)
-        {
-            echo "<li>$member</li>";
-        }
-        ?>
+        for($i=0;$i<count($idx_family);$i++)
+{
+echo "<li>$idx_family[$i]</li>";
+}    ?>
     </ul>
     <hr />
-    <div>Iterate the associative array foreach($array as $key => $value)</div>
+    <div>Iterate the associative array outputing a list</div>
     <ul>
         <?php
-        foreach($assoc_family as $name => $age)
+        foreach($assoc_family as $role => $name)
         {
-            printf("<li>%s is %s</li>", $name, $age);
+        printf("%s is %s", $name, $role); 
         }
         ?>
     </ul>

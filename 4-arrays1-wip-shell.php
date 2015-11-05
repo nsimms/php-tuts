@@ -12,8 +12,7 @@ $months = array('january', 'february', 'march');
 </head>
 <body>
     <p>Shorthand echo available from php 5.4</p>
-    <?php
-    ?>
+
     <hr />
     <?php
     //dump out variables
@@ -39,7 +38,7 @@ $months = array('january', 'february', 'march');
     <hr />
 
 
-    <div>Iterate the index array foreach($array as $value)</div>
+    <div>Iterate the index array ouputing a list</div>
     <div><strong>Note:</strong> here we can simply echo variable within strings as using double quotes. cannot do with single quotes. in that case need proper concatenation</div>
 
     <ul>
@@ -48,7 +47,7 @@ $months = array('january', 'february', 'march');
         ?>
     </ul>
     <hr />
-    <div>Iterate the associative array foreach($array as $key => $value)</div>
+    <div>Iterate the associative array outputing a list</div>
     <ul>
         <?php
         

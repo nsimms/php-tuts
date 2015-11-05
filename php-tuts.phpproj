@@ -23,6 +23,7 @@
     <Compile Include="5-arrays2-shell.php" />
     <Compile Include="5-arrays2.php" />
     <Compile Include="6-conditionals.php" />
+    <Compile Include="7-loops.php" />
     <Compile Include="index.php" />
   </ItemGroup>
 </Project>
