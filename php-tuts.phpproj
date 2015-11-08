@@ -16,14 +16,33 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="4-arrays1-wip-shell.php" />
-    <Compile Include="4-arrays1-wip.php" />
-    <Compile Include="4-arrays1.php" />
-    <Compile Include="5-arrays2-wip.php" />
-    <Compile Include="5-arrays2-shell.php" />
-    <Compile Include="5-arrays2.php" />
-    <Compile Include="6-conditionals.php" />
-    <Compile Include="7-loops.php" />
+    <Compile Include="11-functions-wip.php" />
+    <Compile Include="11-functions-shell.php" />
+    <Compile Include="11-functions.php" />
+    <Compile Include="04-arrays1-wip-shell.php" />
+    <Compile Include="04-arrays1-wip.php" />
+    <Compile Include="04-arrays1.php" />
+    <Compile Include="05-arrays2-wip.php" />
+    <Compile Include="05-arrays2-shell.php" />
+    <Compile Include="05-arrays2.php" />
+    <Compile Include="06-conditionals-shell.php" />
+    <Compile Include="06-conditionals-wip.php" />
+    <Compile Include="06-conditionals.php" />
+    <Compile Include="07-loops-shell.php" />
+    <Compile Include="07-loops-wip.php" />
+    <Compile Include="07-loops.php" />
+    <Compile Include="classes.php" />
+    <Compile Include="classes\clsCar.php" />
+    <Compile Include="includes\index.php" />
     <Compile Include="index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="includes\" />
+    <Folder Include="includes\inc\" />
+    <Folder Include="classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="includes\inc\_footer.html" />
+    <Content Include="includes\inc\_header.html" />
   </ItemGroup>
 </Project>
