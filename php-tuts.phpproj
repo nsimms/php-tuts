@@ -31,8 +31,11 @@
     <Compile Include="07-loops-shell.php" />
     <Compile Include="07-loops-wip.php" />
     <Compile Include="07-loops.php" />
+    <Compile Include="12-objects.php" />
+    <Compile Include="13-heredocs.php" />
     <Compile Include="classes.php" />
     <Compile Include="classes\clsCar.php" />
+    <Compile Include="classes\clsPerson.php" />
     <Compile Include="includes\index.php" />
     <Compile Include="index.php" />
   </ItemGroup>
