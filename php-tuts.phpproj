@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Name>php_tuts</Name>
-    <ProjectGuid>6af69483-6637-44ac-aa7a-bea4ba5f06cc</ProjectGuid>
+    <ProjectGuid>{6af69483-6637-44ac-aa7a-bea4ba5f06cc}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>php_tuts</RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
@@ -16,14 +16,11 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="11-functions-wip.php" />
-    <Compile Include="11-functions-shell.php" />
-    <Compile Include="11-functions.php" />
     <Compile Include="04-arrays1-wip-shell.php" />
     <Compile Include="04-arrays1-wip.php" />
     <Compile Include="04-arrays1.php" />
-    <Compile Include="05-arrays2-wip.php" />
     <Compile Include="05-arrays2-shell.php" />
+    <Compile Include="05-arrays2-wip.php" />
     <Compile Include="05-arrays2.php" />
     <Compile Include="06-conditionals-shell.php" />
     <Compile Include="06-conditionals-wip.php" />
@@ -31,20 +28,38 @@
     <Compile Include="07-loops-shell.php" />
     <Compile Include="07-loops-wip.php" />
     <Compile Include="07-loops.php" />
+    <Compile Include="11-functions-shell.php" />
+    <Compile Include="11-functions-wip.php" />
+    <Compile Include="11-functions.php" />
+    <Compile Include="12-objects-shell.php" />
+    <Compile Include="12-objects-wip.php" />
     <Compile Include="12-objects.php" />
+    <Compile Include="13-heredocs-wip.php" />
+    <Compile Include="13-heredocs-shell.php" />
     <Compile Include="13-heredocs.php" />
+    <Compile Include="14-get-wip.php" />
+    <Compile Include="14-get-shell.php" />
+    <Compile Include="14-get.php" />
+    <Compile Include="15-post-wip.php" />
+    <Compile Include="15-post-shell.php" />
+    <Compile Include="15-post.php" />
     <Compile Include="classes.php" />
     <Compile Include="classes\clsCar.php" />
     <Compile Include="classes\clsPerson.php" />
     <Compile Include="includes\index.php" />
     <Compile Include="index.php" />
+    <Compile Include="sessions\admin.php" />
+    <Compile Include="sessions\login.php" />
+    <Compile Include="sessions\logout.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="classes\" />
     <Folder Include="includes\" />
     <Folder Include="includes\inc\" />
-    <Folder Include="classes\" />
+    <Folder Include="sessions\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="includes\inc\_footer.html" />
     <Content Include="includes\inc\_header.html" />
   </ItemGroup>

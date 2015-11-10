@@ -10,28 +10,12 @@ $post = array(
 ?>
 <p>Standard heredocs usage</p>
 <?php
-$txt = <<<EOT
-<h1>{$post['title']}</h1>
-<p>{$post['post']}</P>
-<div>{$post['author']}</div>
-EOT;
 
-echo $txt;
 ?>
 
 <hr>
 <p>Use extract</p>
 <?php
-extract($post);
-
-$txt2 = <<<EOT
-<h2>$title</h2>
-<p>$post</p>
-<div>$author</div>
-<div>category: $category</div>
-EOT;
-
-echo $txt2;
 
 // Note: extract transposes the elements of an array to variables using the keys as the variable names and assigning the values
 // the closing text of the heredocs statement (which can be anything you choose) cannot be the last thing in the doc
