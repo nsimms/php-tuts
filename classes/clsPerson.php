@@ -6,22 +6,22 @@
  * clsPerson description.
  *
  * @version 1.0
- * @author Upfront
+ * @author nsimms
  */
 class clsPerson
 {
     public $name;
-    public $title;
-    public $job;
-
-    public function __construct($name, $title){
-    $this->name = $name;
-    $this->title = $title;
-    }
-
-    public function communicate($style = 'voice')
+    public $age;
+    
+    function __construct($name, $age)
     {
-        return sprintf("%s is communicating with %s", $this->name, $style);
+        $this->name = $name;
+        $this->age = $age; 
+    }
+    
+    public function communicating($style = 'voice')
+    {
+    return sprintf("%s is communicating via %s", $this->name, $style);
     }
     
 }

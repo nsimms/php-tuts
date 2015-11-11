@@ -10,12 +10,28 @@ $post = array(
 ?>
 <p>Standard heredocs usage</p>
 <?php
+$email = <<<EOT
+<h1>{$post['title']}</h1>
+<p>{$post['post']}</p>
+<div>by {$post['author']}</div>
+EOT;
 
+echo $email;
 ?>
 
 <hr>
 <p>Use extract</p>
 <?php
+
+extract($post);
+
+$message = <<<EOT
+<h1>{$title}</h1>
+<p>{$post}<p/>
+<div>author: {$author}</div>
+EOT;
+
+echo $message;
 
 // Note: extract transposes the elements of an array to variables using the keys as the variable names and assigning the values
 // the closing text of the heredocs statement (which can be anything you choose) cannot be the last thing in the doc
