@@ -40,7 +40,7 @@ $months = array('jan', 'feb', 'march' ,'apr', 'may');
     
     ?>
     <hr />
-    <p>add item to beginning af array</p>
+    <p>add item to beginning of array</p>
     <?php
 
     ?>
