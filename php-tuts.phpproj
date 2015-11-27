@@ -43,19 +43,30 @@
     <Compile Include="15-post-wip.php" />
     <Compile Include="15-post-shell.php" />
     <Compile Include="15-post.php" />
+    <Compile Include="18-cookies.php" />
+    <Compile Include="counter\index.php" />
+    <Compile Include="counter\index.tmpl.php" />
     <Compile Include="classes.php" />
     <Compile Include="classes\clsCar.php" />
     <Compile Include="classes\clsPerson.php" />
+    <Compile Include="classes\clsPersonFinal.php" />
     <Compile Include="includes\index.php" />
     <Compile Include="index.php" />
+    <Compile Include="sessions\admin-wip.php" />
+    <Compile Include="sessions\admin-shell.php" />
     <Compile Include="sessions\admin.php" />
+    <Compile Include="sessions\login-wip.php" />
+    <Compile Include="sessions\login-shell.php" />
     <Compile Include="sessions\login.php" />
+    <Compile Include="sessions\logout-wip.php" />
+    <Compile Include="sessions\logout-shell.php" />
     <Compile Include="sessions\logout.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="classes\" />
     <Folder Include="includes\" />
     <Folder Include="includes\inc\" />
+    <Folder Include="counter\" />
     <Folder Include="sessions\" />
   </ItemGroup>
   <ItemGroup>

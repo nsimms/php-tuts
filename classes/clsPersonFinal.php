@@ -19,7 +19,7 @@ class clsPersonFinal
     $this->title = $title;
     }
 
-    public function communicating($style = 'voice')
+    public function communicate($style = 'voice')
     {
         return sprintf("%s is communicating with %s", $this->name, $style);
     }

@@ -1,81 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>functions</title>
+    <title>functions a foot</title>
 </head>
 <body>
     <p>Code to say hello to Fred by default but recieve dynamic variable</p>
     <?php
-    function hiThere($name = 'Fred')
-    {
-        return "Hi " . $name;
-    }
+function sayHello($name = 'Fred')
+{
+    return sprintf("Hello %s", $name );
+}
 
-    echo hiThere();
-    echo hiThere('nev');
+echo sayHello();
     ?>
     <hr />
     <p>function to apply pre tags around print_r</p>
     <?php
-    
-    $people = array(
-        'nev', 'clare', 'fred'
-        );
+    $idxfamily = array('nev', 'clare', 'freddy');
     
     function pp($arr)
     {
-        echo "<pre>";
-        print_r($arr);
-        echo "</pre>";
+    echo "<pre>";
+    print_r($arr);
+    echo "</pre>";
     }
     
-    pp($people);
+    pp($idxfamily);
+    
     ?>
     <hr />
     <p>Array pluck </p>
     <?php
-    $data = array(
-        array('name' => 'nev', 'age' => '41', 'job' => 'web dev'),        
-        array('name' => 'clare', 'age' => '36', 'job' => 'events'),        
-        array('name' => 'fred', 'age' => '0', 'job' => 'cute fella')
+    $people = array(
+        array('name' => 'nev', 'age' => '41', 'job' => 'web dev'),
+        array('name' => 'clare', 'age' => '36', 'job' => 'events'),
+        array('name' => 'fred', 'age' => '0', 'job' => 'being cute'),
         );
     
-    
-    function arrpluck($arr, $topluck = 'age')
+    function arrPluck($arr, $topluck = 'name')
     {
-        $outarr = array();
+     $out = array();
         
-        foreach($arr as $person)
-        {
-            array_push($outarr, $person[$topluck]);
-            
-        }
-        return $outarr;
+     foreach($arr as $item)
+     {
+         array_push($out, $item[$topluck]);
+     }
+    
+     return $out;
     }
     
-    var_dump(arrpluck($data));
+    var_dump(arrPluck($people, 'name'));
     ?>
     <hr />
     <p>Array pluck using array map</p>
     <?php
-    $data = array(
-    array('name' => 'nev', 'age' => '41', 'job' => 'web dev'),        
-    array('name' => 'clare', 'age' => '36', 'job' => 'events'),        
-    array('name' => 'fred', 'age' => '0', 'job' => 'cute fella')
-    );
     
-    function arrpluckmap($arr, $topluck = 'age')
+    function arrPluckMap($arr, $topluck = 'name')
     {
-        return array_map(
-            function($item) use($topluck) {
-                return $item[$topluck];
-                }
-            
-            , $arr);
-        
+        return array_map(function($item) use ($topluck)
+            {
+            return $item[$topluck];
+            }
+            ,$arr);
     }
     
-    var_dump(arrpluckmap($data, 'job'));
+    var_dump(arrPluckMap($people, 'job'));
+    
     ?>
 </body>
 </html>
