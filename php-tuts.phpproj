@@ -44,14 +44,24 @@
     <Compile Include="15-post-shell.php" />
     <Compile Include="15-post.php" />
     <Compile Include="18-cookies.php" />
+    <Compile Include="24-databases.php" />
     <Compile Include="counter\index.php" />
     <Compile Include="counter\index.tmpl.php" />
     <Compile Include="classes.php" />
     <Compile Include="classes\clsCar.php" />
     <Compile Include="classes\clsPerson.php" />
     <Compile Include="classes\clsPersonFinal.php" />
+    <Compile Include="databases\config.php" />
+    <Compile Include="databases\functions.php" />
+    <Compile Include="databases\functions2.php" />
+    <Compile Include="databases\index.php" />
+    <Compile Include="databases\index.view.php" />
+    <Compile Include="file-functions\index.php" />
     <Compile Include="includes\index.php" />
     <Compile Include="index.php" />
+    <Compile Include="organising-pdo\config.php" />
+    <Compile Include="organising-pdo\functions.php" />
+    <Compile Include="organising-pdo\index.php" />
     <Compile Include="sessions\admin-wip.php" />
     <Compile Include="sessions\admin-shell.php" />
     <Compile Include="sessions\admin.php" />
@@ -61,16 +71,33 @@
     <Compile Include="sessions\logout-wip.php" />
     <Compile Include="sessions\logout-shell.php" />
     <Compile Include="sessions\logout.php" />
+    <Compile Include="simple-email-registration\functions.php" />
+    <Compile Include="simple-email-registration\index.php" />
+    <Compile Include="simple-email-registration\index.tmpl.php" />
+    <Compile Include="simple-email-registration\mailing_list.php" />
+    <Compile Include="simple-email-registration\registered_users.php" />
+    <Compile Include="simple-email-registration\registered_users.tmpl.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="classes\" />
+    <Folder Include="file-functions\img\" />
     <Folder Include="includes\" />
     <Folder Include="includes\inc\" />
     <Folder Include="counter\" />
+    <Folder Include="file-functions\" />
+    <Folder Include="databases\" />
+    <Folder Include="organising-pdo\" />
+    <Folder Include="simple-email-registration\" />
     <Folder Include="sessions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="file-functions\img\883jia-streamingplayer.png" />
+    <Content Include="file-functions\img\netfaredescscrenshot.jpg" />
+    <Content Include="file-functions\img\prod_dis.png" />
+    <Content Include="file-functions\img\VPNConnErr.jpg" />
+    <Content Include="file-functions\other.txt" />
+    <Content Include="file-functions\random.txt" />
     <Content Include="includes\inc\_footer.html" />
     <Content Include="includes\inc\_header.html" />
   </ItemGroup>
